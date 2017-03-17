@@ -12,5 +12,6 @@ volumes/mysql-sonarqube/*
 !volumes/nexus/README.md
 !volumes/sonarqube/README.md
 !volumes/mysql-sonarqube/README.md
+!volumes/mysql-sonarqube/esperar-inicio-servicio-mysql.sh
 !volumes/selenium/README.md
 
