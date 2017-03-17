@@ -6,6 +6,7 @@ volumes/selenium/*
 volumes/mysql-sonarqube/*
 
 !volumes/nginx/html/index.html
+!volumes/nginx/html/favicon.ico
 !volumes/nginx/nginx.conf
 !volumes/jenkins/README.md
 !volumes/nexus/README.md
