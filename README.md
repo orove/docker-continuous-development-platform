@@ -6,9 +6,10 @@ La idea de este repositorio, es proporcionar un script para docker-compose que p
 
 
 
-### Historia
- * **0.1alpha**: Se crean contenedores out-of-the-box de Jenkins, SonarQube, Nexus, Nginx, MySQL y Selenium (Chrome Debug)
+### Historial de Cambios
+ * **0.2alpha**: Se crean directorios con puntos de montaje y se conectan los contenedores entre sí mediante un una red bridge.
  * **0.1beta**: Se corrige problema con la carga de imágenes de Nexus utilizando parámetros 'proxy_set_header' y 'subfilter'en archivo de configuración html/nginx.conf
+ * **0.1alpha**: Se crean contenedores out-of-the-box de Jenkins, SonarQube, Nexus, Nginx, MySQL y Selenium (Chrome Debug)
 
 ### Roadmap
  * **0.1**: Disponibilizar desde página de inicio de Nginx acceso a Jenkins, SonarQube, Nexus, MySQL y Selenium (contenedores out-of-the-box)
