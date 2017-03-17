@@ -1,0 +1,13 @@
+volumes/nginx/html/*
+volumes/jenkins/*
+volumes/nexus/*
+volumes/sonarqube/*
+volumes/selenium/*
+
+!volumes/nginx/html/index.html
+!volumes/nginx/nginx.conf
+!volumes/jenkins/README.md
+!volumes/nexus/README.md
+!volumes/sonarqube/README.md
+!volumes/selenium/README.md
+
