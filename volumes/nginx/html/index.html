@@ -2,17 +2,103 @@
 <html>
 	<head>
 		<meta charset="UTF-8" />
-		<title>Orove Plataforma de Desarrollo Continuo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<title>Orove - Plataforma de Desarrollo Continuo</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" />
+			function goToServiceSite(serviceName) {
+				var linkElement = document.createElement ('a');
+				linkElement.href = location.href;
+
+				location.href = linkElement.protocol+"//"+serviceName+"."+linkElement.hostname;
+			}		
+		</script>
+
+		<style>
+			
+			* {
+    			box-sizing: border-box;
+			}
+
+			body {
+				background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Gear-kegelzahnrad.svg/2100px-Gear-kegelzahnrad.svg.png);
+				background-repeat:no-repeat;
+				background-size:contain;
+				background-position:center;
+               background-position-y: 150px;
+			}
+
+			.jumbotron {
+				background-color: rgba(0, 0, 0, 0.6);
+				color: white;
+			}
+
+			.post-it {
+				background:#fefabc; 
+				padding:15px; 
+				font-family: 'Gloria Hallelujah', cursive; 
+				font-size:15px; 
+				color: #000; 
+				width:300px; 
+
+				-moz-transform: rotate(7deg);
+				-webkit-transform: rotate(7deg);
+				-o-transform: rotate(7deg);
+				-ms-transform: rotate(7deg);
+				transform: rotate(7deg);
+
+				box-shadow: 0px 4px 6px #333;
+				-moz-box-shadow: 0px 4px 6px #333;
+				-webkit-box-shadow: 0px 4px 6px #333;
+
+				margin-left:50px;
+				margin-top: -50px;
+			}
+
+			.link-github {
+				text-align:right;
+				margin-top: -55px;
+				margin-right:10px;	
+				color:white;
+			}
+
+			.link-github a {
+				color:white;
+			}
+
+			ul.servicios li {
+				font-family:lucida;
+			}
+
+			ul.servicios a {
+				font-size: 18px;
+			}
+
+		</style>
 	</head>
 	<body>
-		<h2>Bienvenido a la OrovePlataforma de Desarrollo Continuo</h2>
-		<h4>Versi&oacute;n 0.1beta</h4>
+		<div class="jumbotron text-center">
+			<h1>Bienvenido a la Plataforma de <br />Desarrollo Continuo</h1>
+			<h3>Orove - Versi&oacute;n 0.2alpha</h3>
+		</div>
 
-		<h5>Servicios disponibles:</h5>
-		<ul>
-			<li><a href="http://jenkins.localhost" />Jenkins</a></li>
-			<li><a href="http://sonarqube.localhost" />SonarQube</a></li>
-			<li><a href="http://nexus.localhost" />Nexus</a></li>
-		</ul>
+		<div class="link-github">
+			<a href="https://github.com/orove/docker-continuous-development-platform" target="_new" >
+				https://github.com/orove/docker-continuous-development-platform
+			</a>
+		</div>
+		<div class="post-it">
+					<h3>Servicios disponibles:</h3>
+					<ul class="servicios">
+						<li><a href="javascript:goToServiceSite('jenkins');" />Jenkins</a> (Servidor de Integraci&oacute;n Continua)</li>
+						<li><a href="javascript:goToServiceSite('sonarqube');" />SonarQube</a> (Servidor de Evaluaci&oacute;n Continua de Calidad del C&oacute;digo)</li>
+						<li><a href="javascript:goToServiceSite('nexus');" />Nexus</a> (Servidor de Repositorio y Administraci&oacute;n de Artefactos)</li>
+						<li><a href="javascript:goToServiceSite('selenium');" />Selenium </a> (Servidor para la Ejecuc&oacute;n de Pruebas Automatizadas con un Navegador)</li>
+				</ul>
+		</div>
 	</body>
 </html>
