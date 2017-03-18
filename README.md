@@ -7,7 +7,7 @@ La idea de este repositorio, es proporcionar un script para docker-compose que p
 
 
 ### Historial de Cambios
- * **0.2alpha**: Se crean directorios con puntos de montaje y se conectan los contenedores entre sí mediante un una red bridge.
+ * **0.2alpha**: Se crean directorios para montar en contenedores y así persistir los datos. También se configura red bridge para conectar los contenedores entre sí.
  * **0.1beta**: Se corrige problema con la carga de imágenes de Nexus utilizando parámetros 'proxy_set_header' y 'subfilter'en archivo de configuración html/nginx.conf
  * **0.1alpha**: Se crean contenedores out-of-the-box de Jenkins, SonarQube, Nexus, Nginx, MySQL y Selenium (Chrome Debug)
 

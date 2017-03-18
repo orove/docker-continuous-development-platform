@@ -3,16 +3,15 @@ volumes/jenkins/*
 volumes/nexus/*
 volumes/sonarqube/*
 volumes/selenium/*
-volumes/mysql-sonarqube/data/*
+volumes/mysql/*
 
-!volumes/mysql-sonarqube/data/.gitignore
+!volumes/mysql/.gitignore
 !volumes/nginx/html/index.html
 !volumes/nginx/html/favicon.ico
 !volumes/nginx/nginx.conf
 !volumes/jenkins/README.md
 !volumes/nexus/README.md
 !volumes/sonarqube/README.md
-!volumes/mysql-sonarqube/README.md
-!volumes/mysql-sonarqube/esperar-inicio-servicio-mysql.sh
+!volumes/mysql/README.md
 !volumes/selenium/README.md
 
