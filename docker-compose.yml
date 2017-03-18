@@ -76,7 +76,7 @@ services:
         environment:
             - SONARQUBE_JDBC_USERNAME=sonar
             - SONARQUBE_JDBC_PASSWORD=sonar
-            - SONARQUBE_JDBC_URL=jdbc:mysql://mysqlserver:3306/sonar?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true
+            - SONARQUBE_JDBC_URL=jdbc:mysql://mysqlserver:3306/sonar?verifyServerCertificate=false&useSSL=false&useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true
         networks:
             orovenet:
                 ipv4_address: ${OROVENET_IP_SERVICIO_SONARQUBE}
