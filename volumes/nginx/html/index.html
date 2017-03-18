@@ -39,7 +39,8 @@
 
 			.post-it {
 				background:#fefabc; 
-				padding:15px; 
+				padding:10px; 
+				padding-top:2px; 
 				font-family: 'Gloria Hallelujah', cursive; 
 				font-size:15px; 
 				color: #000; 
@@ -70,12 +71,25 @@
 				color:white;
 			}
 
-			ul.servicios li {
+			dl.servicios dd {
 				font-family:lucida;
 			}
 
-			ul.servicios a {
+			dl.servicios a {
 				font-size: 18px;
+			}
+
+			dl.servicios dd {
+				margin-left:50px;
+				text-align:justify;
+			}
+
+			@media only screen and (min-width:320px) and (max-width:800px) {
+
+				.post-it {
+					margin-top: 20px;
+				}
+
 			}
 
 		</style>
@@ -92,13 +106,17 @@
 			</a>
 		</div>
 		<div class="post-it">
-					<h3>Servicios disponibles:</h3>
-					<ul class="servicios">
-						<li><a href="javascript:goToServiceSite('jenkins');" />Jenkins</a> (Servidor de Integraci&oacute;n Continua)</li>
-						<li><a href="javascript:goToServiceSite('sonarqube');" />SonarQube</a> (Servidor de Evaluaci&oacute;n Continua de Calidad del C&oacute;digo)</li>
-						<li><a href="javascript:goToServiceSite('nexus');" />Nexus</a> (Servidor de Repositorio y Administraci&oacute;n de Artefactos)</li>
-						<li><a href="javascript:goToServiceSite('selenium');" />Selenium </a> (Servidor para la Ejecuc&oacute;n de Pruebas Automatizadas con un Navegador)</li>
-				</ul>
+			<h3>Servicios disponibles:</h3>
+			<dl class="servicios">
+				<dt><a href="javascript:goToServiceSite('jenkins');" />Jenkins</a></dt> 
+				<dd>Servidor de Integraci&oacute;n Continua</dd>
+				<dt><a href="javascript:goToServiceSite('sonarqube');" />SonarQube</a></dt>
+				<dd>Servidor de Evaluaci&oacute;n Continua de Calidad del C&oacute;digo</dd>
+				<dt><a href="javascript:goToServiceSite('nexus');" />Nexus</a> </dt>
+				<dd>Servidor con Repositorio y Administraci&oacute;n de Artefactos</dd>
+				<dt><a href="javascript:goToServiceSite('selenium');" />Selenium </a> </dt>
+				<dd>Servidor para la Ejecuci&oacute;n de Pruebas Automatizadas con un Navegador</dd>
+			</dl>
 		</div>
 	</body>
 </html>
